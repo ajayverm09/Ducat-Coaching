@@ -44,12 +44,12 @@ const AlumniPlaced = () => {
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4">
-            <button className="bg-orange-500 text-white font-bold px-6 py-3 rounded shadow hover:bg-orange-600 transition">
+            <a href='/contact' className="bg-orange-500 text-white font-bold px-6 py-3 border-2 border-orange-500 rounded shadow hover:bg-white hover:text-orange-500 transition">
               ASK A DEMO →
-            </button>
-            <button className="border-2 border-white text-white font-bold px-6 py-3 rounded hover:bg-white hover:text-black transition">
+            </a>
+            <a href='/blogs' className="border-2 border-white text-white font-bold px-6 py-3 rounded hover:bg-white hover:text-black transition">
               EXPLORE MORE →
-            </button>
+            </a>
           </div>
         </div>
 

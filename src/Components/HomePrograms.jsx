@@ -69,20 +69,29 @@ const programs = [
 
 const TopPrograms = () => {
   return (
-    <section className="px-32 py-10  bg-white">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-6 border-b-2 border-orange-400 inline-block">
-        Explore Top Programs
-      </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {programs.map((program, index) => (
-          <div
-            key={index}
-            className="flex items-center space-x-4 p-4 hover:shadow-md transition-shadow"
-          >
-            <img src={program.image} alt={program.title} className="w-12 h-12 object-contain" />
-            <span className="text-sm font-bold text-gray-800">{program.title}</span>
-          </div>
-        ))}
+    <section className="py-8 md:py-10 lg:py-12 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-32 bg-white">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4 md:mb-6 border-b-2 border-orange-400 inline-block">
+          Explore Top Programs
+        </h2>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
+          {programs.map((program, index) => (
+            <div
+              key={index}
+              className="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 hover:shadow-md transition-shadow rounded-lg hover:bg-gray-50"
+            >
+              <img 
+                src={program.image} 
+                alt={program.title} 
+                className="w-10 h-10 md:w-12 md:h-12 object-contain flex-shrink-0" 
+              />
+              <span className="text-xs md:text-sm font-bold text-gray-800 leading-tight">
+                {program.title}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

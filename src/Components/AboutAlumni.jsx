@@ -54,7 +54,7 @@ const AlumniPlaced = () => {
         </div>
 
         {/* Logos Grid */}
-        <div className="md:w-1/2 grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <div className="md:w-1/2 grid grid-cols-3 sm:grid-cols-3 gap-4">
           {companies.map((company, idx) => (
             <div
               key={idx}
